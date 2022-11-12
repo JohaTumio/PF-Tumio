@@ -63,6 +63,7 @@ header{
                     line-height:2;
                     list-style: map-get(mapas.$font-decoration, list-style);
                     .a_nav{
+                        font-family: map-get(mapas.$font-decoration, font-family);
                         text-decoration: map-get(mapas.$font-decoration, text-decoration);
                         font-size: 1.5rem;
                         padding: 0.5rem;

@@ -4,9 +4,35 @@
 @use "../base/listas";
 @use "../base/mapas";
 
-
 #body_grid{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
+}
+.container_introduccion{
+    .titulo_introduccion{
+        font-size: 3rem;
+        margin: 1rem;
+        font-family: variables.$font-family-subtitulo;
+        color: variables.$color-subtitulo;
+        animation: focus-in-expand-fwd 0.8s ease-in-out both;
+        //Animacion subtitulo//
+        @keyframes focus-in-expand-fwd {
+            0% {
+            letter-spacing: -0.5em;
+            transform: translateZ(-800px);
+            filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            transform: translateZ(0);
+            filter: blur(0);
+            opacity: 1;
+            }
+        }//Fin animacion subtitulo//
+    }
+    .p_introduccion{
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
 }
