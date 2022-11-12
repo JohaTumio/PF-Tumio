@@ -1,0 +1,52 @@
+@use "../base/extend";
+@use "../base/variables";
+@use "../base/mixin";
+@use "../base/listas";
+@use "../base/mapas";
+
+footer{
+    background-color: nth(listas.$bg-color,2);
+    margin-top: 2rem;
+    @include mixin.display-flex (flex, space-around, center);
+    padding-left: 1rem;
+    p {
+        font-size: 1rem;
+    }
+    .container_redes{
+        .lista_redes{
+            @include mixin.display-flex (flex, flex-end, center);
+            flex-wrap: wrap;
+            li{
+                list-style:map-get(mapas.$font-decoration, list-style);
+                a{
+                    margin: 1rem;
+                    .red_social{
+                        height: 1.5rem;
+                        width: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/* VISTA TABLET FOOTER */
+@media (min-width: 768px){
+    footer{
+        height:4rem;
+        p {
+            font-size: 2rem;
+        }
+        .container_redes{
+            .lista_redes{
+                li{
+                    a{
+                        .red_social{
+                            height: 3rem;
+                            width: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

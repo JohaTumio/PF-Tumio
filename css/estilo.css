@@ -146,5 +146,46 @@ header nav div .lista_nav li .a_nav {
     transition: all 0.8s;
   }
 }
+footer {
+  background-color: #888fec;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 1rem;
+}
+footer p {
+  font-size: 1rem;
+}
+footer .container_redes .lista_redes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .container_redes .lista_redes li {
+  list-style: none;
+}
+footer .container_redes .lista_redes li a {
+  margin: 1rem;
+}
+footer .container_redes .lista_redes li a .red_social {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* VISTA TABLET FOOTER */
+@media (min-width: 768px) {
+  footer {
+    height: 4rem;
+  }
+  footer p {
+    font-size: 2rem;
+  }
+  footer .container_redes .lista_redes li a .red_social {
+    height: 3rem;
+    width: 3rem;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */
