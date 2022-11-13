@@ -20,10 +20,75 @@ html {
   text-decoration: underline;
 }
 
-section .img_productos .productos, header .container_logo_titulo .container_img_logo img {
+section .img_productos img, header .container_logo_titulo .container_img_logo img {
   border-radius: 2rem;
 }
 
+.container_button_productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.container_button_productos form .a_productos_enlace {
+  font-size: 1.5rem;
+  height: 3em;
+  border: none;
+  background-color: #17A589;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+  .container_button_productos form .a_productos_enlace {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 3px;
+    height: 3em;
+    padding: 0 3em;
+    border: none;
+    background-color: #17A589;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .container_button_productos form .a_productos_enlace::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background: #17A589;
+    background: linear-gradient(90deg, #17A589 20%, #3498DB 100%);
+    transition: 0.2s;
+  }
+  .container_button_productos form .a_productos_enlace .label {
+    position: relative;
+  }
+  .container_button_productos form .a_productos_enlace .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  .container_button_productos form .a_productos_enlace:hover::before {
+    height: 100%;
+  }
+  .container_button_productos form .a_productos_enlace:hover .icon {
+    top: 0;
+    opacity: 1;
+  }
+}
 /* MOVILE FIRST HEADER-NAV */
 header {
   display: grid;
@@ -243,9 +308,127 @@ section .img_productos {
   justify-items: center;
   row-gap: 0.5rem;
 }
-section .img_productos .productos {
+section .img_productos img {
   height: 18rem;
   width: 18rem;
+}
+
+div .atencion_personalizada {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+/* VISTA TABLET INICIO */
+@media (min-width: 768px) {
+  .container_introduccion .titulo_introduccion {
+    font-size: 5rem;
+  }
+  .container_introduccion .p_introduccion {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  main .bienvenida .bienvenida_p {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  section #titulo_productos {
+    font-size: 2.8rem;
+    margin: 2rem 0rem;
+  }
+  section .productos_p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  section .img_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+  }
+  div .atencion_personalizada {
+    font-size: 2rem;
+  }
+}
+/* VISTA DESKTOP INICIO */
+@media (min-width: 1024px) {
+  .container_introduccion .titulo_introduccion {
+    font-size: 5rem;
+    margin: 4rem;
+    border-style: dotted;
+    border-width: 3px;
+  }
+  .container_introduccion .p_introduccion {
+    font-size: 2.8rem;
+    margin: 2rem;
+  }
+  .container_introduccion .p_introduccion .introduccion_a_productos {
+    background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .container_introduccion .p_introduccion .introduccion_a_productos:before {
+    content: "";
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  .container_introduccion .p_introduccion .introduccion_a_productos:hover {
+    background-position: 0;
+  }
+  .container_introduccion .p_introduccion .introduccion_a_productos:hover::before {
+    width: 100%;
+  }
+  main .bienvenida {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .bienvenida .bienvenida_p {
+    font-size: 2.8rem;
+    margin: 4rem 3rem;
+  }
+  main .bienvenida .video_bienvenida {
+    display: block;
+    width: 80rem;
+    height: 50rem;
+  }
+  section #titulo_productos {
+    font-size: 4rem;
+  }
+  section .productos_p {
+    font-size: 3rem;
+    margin: 5rem;
+  }
+  section .img_productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+  }
+  section .img_productos img {
+    height: 15rem;
+    width: 15rem;
+    transition: all 0.3s;
+  }
+  section .img_productos img:hover {
+    transform: scale(1.1) translateY(-40px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  div .atencion_personalizada {
+    font-size: 2.3rem;
+    margin: 4rem;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
