@@ -9,6 +9,7 @@
     grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
 }
+/* MOVILE FIRST INICIO */
 .container_introduccion{
     .titulo_introduccion{
         font-size: 3rem;
@@ -34,5 +35,40 @@
     .p_introduccion{
         font-size: 1.5rem;
         margin: 0.5rem;
+    }
+}
+main{
+    .bienvenida{
+        .bienvenida_p{ 
+            font-size: 1.5rem;
+            margin: 1rem 3rem;
+            padding: 2rem;
+            border-style: nth(listas.$bordes, 2);
+            line-height: 2;
+            background-image: variables.$fondo-p-bienvenida;
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+            font-weight: bold;
+        }
+    }
+}
+section{
+    #titulo_productos{
+        font-size: 1.5rem;
+    }
+    .productos_p{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    .img_productos{
+        @include mixin.display-grid (grid, 1fr, repeat(6,1fr));
+        justify-items: center;
+        row-gap: 0.5rem;
+        .productos{
+            height: 18rem;
+            width: 18rem;
+            @extend %border-radius;
+        }
     }
 }

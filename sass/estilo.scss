@@ -4,7 +4,7 @@
 @use "./base/mapas";
 @use "./base/mixin";
 @use "./base/extend";
-@use "./components/inicio";
-@use "./components/header-nav";
-@use "./components/footer";
+@use "./layout/header-nav";
+@use "./layout/footer";
+@use "./views/inicio";
 

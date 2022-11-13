@@ -20,37 +20,11 @@ html {
   text-decoration: underline;
 }
 
-#body_grid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(7, auto);
+section .img_productos .productos, header .container_logo_titulo .container_img_logo img {
+  border-radius: 2rem;
 }
 
-.container_introduccion .titulo_introduccion {
-  font-size: 3rem;
-  margin: 1rem;
-  font-family: "Dancing Script", cursive;
-  color: #11226d;
-  animation: focus-in-expand-fwd 0.8s ease-in-out both;
-}
-@keyframes focus-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    transform: translateZ(-800px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-.container_introduccion .p_introduccion {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
-
+/* MOVILE FIRST HEADER-NAV */
 header {
   display: grid;
   grid-template-columns: auto;
@@ -67,7 +41,6 @@ header .container_logo_titulo .container_img_logo img {
   height: 7rem;
   width: 5rem;
   margin: 0.5rem;
-  border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0pxinset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 header .container_logo_titulo .container_h1 {
@@ -168,6 +141,7 @@ header nav div .lista_nav li .a_nav {
     transition: all 0.8s;
   }
 }
+/* MOVILE FIRST FOOTER */
 footer {
   background-color: #888fec;
   margin-top: 2rem;
@@ -209,6 +183,69 @@ footer .container_redes .lista_redes li a .red_social {
     height: 3rem;
     width: 3rem;
   }
+}
+#body_grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7, auto);
+}
+
+/* MOVILE FIRST INICIO */
+.container_introduccion .titulo_introduccion {
+  font-size: 3rem;
+  margin: 1rem;
+  font-family: "Dancing Script", cursive;
+  color: #11226d;
+  animation: focus-in-expand-fwd 0.8s ease-in-out both;
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.container_introduccion .p_introduccion {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+main .bienvenida .bienvenida_p {
+  font-size: 1.5rem;
+  margin: 1rem 3rem;
+  padding: 2rem;
+  border-style: ridge;
+  line-height: 2;
+  background-image: url(../../img/fondo-parrafo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-weight: bold;
+}
+
+section #titulo_productos {
+  font-size: 1.5rem;
+}
+section .productos_p {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+section .img_productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  row-gap: 0.5rem;
+}
+section .img_productos .productos {
+  height: 18rem;
+  width: 18rem;
 }
 
 /*# sourceMappingURL=estilo.css.map */

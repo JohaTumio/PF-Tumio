@@ -4,6 +4,7 @@
 @use "../base/listas";
 @use "../base/mapas";
 
+/* MOVILE FIRST FOOTER */
 footer{
     background-color: nth(listas.$bg-color,2);
     margin-top: 2rem;
