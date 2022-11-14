@@ -472,5 +472,25 @@ main #galeria div .img_galeria_productos div img {
     margin-top: 5rem;
   }
 }
+/* MOVILE FIRST SOBRE NOSOTROS */
+.section_sobre_nosotros {
+  border-style: ridge;
+  margin: 1rem;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  font-weight: bolder;
+}
+
+/* VISTA TABLET SOBRE NOSOTROS */
+@media (min-width: 768px) {
+  .section_sobre_nosotros {
+    margin: 2.5rem;
+  }
+}
+/* VISTA DESKTOP SOBRE NOSOTROS */
+@media (min-width: 1024px) {
+  .section_sobre_nosotros {
+    margin: 4rem;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */
