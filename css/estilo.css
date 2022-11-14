@@ -492,5 +492,72 @@ main #galeria div .img_galeria_productos div img {
     margin: 4rem;
   }
 }
+/* MOVILE FIRST PAG CONTACTO */
+section .section_informacion_contacto {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+div .p_introduccion_formulario {
+  font-size: 1.7rem;
+}
+
+section .contenedor_formulario {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #9C9C9C;
+}
+section .contenedor_formulario form div div .input_consulta {
+  border-color: #D7DBDD;
+  color: #5D6D7E;
+}
+section .contenedor_formulario form div div textarea {
+  resize: none;
+  height: 10em;
+  width: 185px;
+}
+section .contenedor_formulario form div .input_text {
+  font-size: small;
+  font-family: initial;
+}
+
+div {
+  font-family: initial;
+}
+div .button_formulario {
+  width: 5em;
+  height: 2em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+div .button_formulario::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #1F44FA 0%, #1FF3FA 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+div .button_formulario:hover::before {
+  width: 9em;
+}
+
+@media (min-width: 768px) {
+  .button_formulario {
+    height: 2em;
+    width: 7em;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */

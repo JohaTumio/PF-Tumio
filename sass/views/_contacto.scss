@@ -1,0 +1,49 @@
+@use "../base/extend";
+@use "../base/variables";
+@use "../base/mixin";
+@use "../base/listas";
+@use "../base/mapas";
+/* MOVILE FIRST PAG CONTACTO */
+section{
+    .section_informacion_contacto{
+        font-size: 1.5rem;
+        line-height:2;
+    }
+}
+div{
+    .p_introduccion_formulario{
+        font-size: 1.7rem;
+    }
+}
+section{
+    .contenedor_formulario{
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #9C9C9C;
+        form{
+            div{
+                div{
+                    .input_consulta{
+                        border-color: #D7DBDD;
+                        color:#5D6D7E;
+                    }
+                }
+            }
+            div{
+                div{
+                    textarea{
+                        resize: none;
+                        height: 10em;
+                        width: 185px;
+                    }
+                }
+            }
+            div{
+                .input_text{
+                    font-size:small;
+                    font-family: map-get(mapas.$font-decoration, font-family);
+                }
+            }
+        }
+    }
+}
