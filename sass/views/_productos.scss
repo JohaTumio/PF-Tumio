@@ -11,8 +11,7 @@ main{
                 margin-top: 3rem;
                 div{
                     img{
-                        height: 25rem;
-                        width: 25rem;
+                        @include mixin.height-width (25rem,25rem);
                         @extend %border-radius;
                         margin-bottom:1.5rem;
                     }
@@ -30,8 +29,7 @@ main{
                     margin-top: 5rem;
                     div{
                         img{
-                            height: 30rem;
-                            width: 30rem;
+                            @include mixin.height-width (30rem,30rem);
                             margin-bottom:3rem;
                         }
                     }

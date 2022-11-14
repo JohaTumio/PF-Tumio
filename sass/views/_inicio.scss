@@ -40,8 +40,7 @@ section{
         justify-items: center;
         row-gap: 0.5rem;
         img{
-            height: 18rem;
-            width: 18rem;
+            @include mixin.height-width (18rem, 18rem);
             @extend %border-radius;
         }
     }
@@ -132,8 +131,7 @@ div{
             }
             .video_bienvenida{
                 display: block;
-                width: 80rem;
-                height: 50rem;
+                @include mixin.height-width (50rem,80rem);
             }
         }
     }
@@ -148,8 +146,7 @@ div{
         .img_productos{
             @include mixin.display-grid (grid, repeat(6, 1fr), auto);
             img{
-                height: 15rem;
-                width: 15rem;
+                @include mixin.height-width (15rem,15rem);
                 transition: all .3s;
                 &:hover{
                     transform: scale(1.1) translateY(-40px);

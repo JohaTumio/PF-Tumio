@@ -9,3 +9,8 @@ align-items: $align-items;
     grid-template-columns: $grid-template-comuns;
     grid-template-rows: $grid-template-rows;
 }
+
+@mixin height-width ($height, $width){
+    height: $height;
+    width: $width;
+}
