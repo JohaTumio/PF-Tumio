@@ -20,7 +20,7 @@ html {
   text-decoration: underline;
 }
 
-section .img_productos img, header .container_logo_titulo .container_img_logo img {
+main #galeria div .img_galeria_productos div img, section .img_productos img, header .container_logo_titulo .container_img_logo img {
   border-radius: 2rem;
 }
 
@@ -249,14 +249,8 @@ footer .container_redes .lista_redes li a .red_social {
     width: 3rem;
   }
 }
-#body_grid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(7, auto);
-}
-
-/* MOVILE FIRST INICIO */
-.container_introduccion .titulo_introduccion {
+/* MOVILE FIRST TITULO INTRODUCCION */
+.titulo_introduccion {
   font-size: 3rem;
   margin: 1rem;
   font-family: "Dancing Script", cursive;
@@ -276,11 +270,49 @@ footer .container_redes .lista_redes li a .red_social {
     opacity: 1;
   }
 }
-.container_introduccion .p_introduccion {
+
+/* VISTA TABLET TITULO INTRODUCCION */
+@media (min-width: 768px) {
+  .titulo_introduccion {
+    font-size: 5rem;
+  }
+}
+/* VISTA DESKTOP TITULO INTRODUCCION */
+@media (min-width: 1024px) {
+  .titulo_introduccion {
+    font-size: 5rem;
+    margin: 4rem;
+    border-style: dotted;
+    border-width: 3px;
+  }
+}
+/* VISTA MOVIL FIRST PARRAFO INTRODUCCION */
+.p_introduccion {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
 
+/* VISTA TABLET PARRAFO INTRODUCCION */
+@media (min-width: 768px) {
+  .p_introduccion {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+}
+/* VISTA DESKTOP PARRAFO INTRODUCCION */
+@media (min-width: 1024px) {
+  .p_introduccion {
+    font-size: 2.8rem;
+    margin: 2rem;
+  }
+}
+#body_grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7, auto);
+}
+
+/* MOVILE FIRST INICIO */
 main .bienvenida .bienvenida_p {
   font-size: 1.5rem;
   margin: 1rem 3rem;
@@ -320,13 +352,6 @@ div .atencion_personalizada {
 
 /* VISTA TABLET INICIO */
 @media (min-width: 768px) {
-  .container_introduccion .titulo_introduccion {
-    font-size: 5rem;
-  }
-  .container_introduccion .p_introduccion {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
   main .bienvenida .bienvenida_p {
     font-size: 2rem;
     margin-top: 3rem;
@@ -351,16 +376,6 @@ div .atencion_personalizada {
 }
 /* VISTA DESKTOP INICIO */
 @media (min-width: 1024px) {
-  .container_introduccion .titulo_introduccion {
-    font-size: 5rem;
-    margin: 4rem;
-    border-style: dotted;
-    border-width: 3px;
-  }
-  .container_introduccion .p_introduccion {
-    font-size: 2.8rem;
-    margin: 2rem;
-  }
   .container_introduccion .p_introduccion .introduccion_a_productos {
     background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
     background-size: 200% 100%;
@@ -428,6 +443,33 @@ div .atencion_personalizada {
   div .atencion_personalizada {
     font-size: 2.3rem;
     margin: 4rem;
+  }
+}
+/* MOVILE FIRST PAGINA PRODUCTOS */
+main #galeria div .img_galeria_productos {
+  margin-top: 3rem;
+}
+main #galeria div .img_galeria_productos div img {
+  height: 25rem;
+  width: 25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* VISTA TABLET PAGINA PRODUCTOS */
+@media (min-width: 768px) {
+  main #galeria div .img_galeria_productos {
+    margin-top: 5rem;
+  }
+  main #galeria div .img_galeria_productos div img {
+    height: 30rem;
+    width: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+/* VISTA DESKTOP PAGINA PRODUCTOS */
+@media (min-width: 1024px) {
+  main #galeria div .img_galeria_productos {
+    margin-top: 5rem;
   }
 }
 

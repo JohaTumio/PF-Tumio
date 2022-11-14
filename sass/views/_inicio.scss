@@ -11,33 +11,6 @@
     grid-template-rows: repeat(7, auto);
 }
 /* MOVILE FIRST INICIO */
-.container_introduccion{
-    .titulo_introduccion{
-        font-size: 3rem;
-        margin: 1rem;
-        font-family: variables.$font-family-subtitulo;
-        color: variables.$color-subtitulo;
-        animation: focus-in-expand-fwd 0.8s ease-in-out both;
-        //Animacion subtitulo//
-        @keyframes focus-in-expand-fwd {
-            0% {
-            letter-spacing: -0.5em;
-            transform: translateZ(-800px);
-            filter: blur(12px);
-            opacity: 0;
-            }
-            100% {
-            transform: translateZ(0);
-            filter: blur(0);
-            opacity: 1;
-            }
-        }//Fin animacion subtitulo//
-    }
-    .p_introduccion{
-        font-size: 1.5rem;
-        margin: 0.5rem;
-    }
-}
 main{
     .bienvenida{
         .bienvenida_p{ 
@@ -81,15 +54,6 @@ div{
 }
 /* VISTA TABLET INICIO */
 @media (min-width: 768px){
-    .container_introduccion{
-        .titulo_introduccion{
-            font-size: 5rem;
-        }
-        .p_introduccion{
-            font-size: 2rem;
-            margin-top: 3rem;
-        }
-    }
     main{
         .bienvenida{
             .bienvenida_p{
@@ -121,16 +85,6 @@ div{
 /* VISTA DESKTOP INICIO */
 @media (min-width: 1024px){
     .container_introduccion{
-        .titulo_introduccion{
-            font-size: 5rem;
-            margin: 4rem;
-            border-style: nth(listas.$bordes, 3);
-            border-width:3px;
-        }
-        .p_introduccion{
-            font-size: 2.8rem;
-            margin: 2rem;
-        }
         .p_introduccion{
             .introduccion_a_productos{
                 //HOVER//
