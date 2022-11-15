@@ -117,6 +117,7 @@ header .container_logo_titulo .container_h1 {
 }
 header .container_logo_titulo .container_h1 h1 {
   font-family: "Peralta", cursive;
+  font-size: 2rem;
   margin: 5px 20px 5px 20px;
   color: #f0ebf0;
   font-weight: normal;
