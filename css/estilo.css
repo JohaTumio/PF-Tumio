@@ -511,16 +511,51 @@ section .contenedor_formulario form div div .input_consulta {
   border-color: #D7DBDD;
   color: #5D6D7E;
 }
+section .contenedor_formulario form div div .input_consulta option {
+  font-family: initial;
+}
 section .contenedor_formulario form div div textarea {
   resize: none;
   height: 10em;
-  width: 185px;
 }
 section .contenedor_formulario form div .input_text {
   font-size: small;
   font-family: initial;
 }
 
+/* VISTA TABLET PAG CONTACTO */
+@media (min-width: 768px) {
+  section .section_informacion_contacto {
+    font-size: 2rem;
+  }
+  div .p_introduccion_formulario {
+    font-size: 2.5rem;
+  }
+  section .contenedor_formulario {
+    font-size: 1.8rem;
+  }
+  section .contenedor_formulario form div div .input_consulta {
+    height: 3.4rem;
+  }
+  section .contenedor_formulario form div .input_text {
+    font-size: medium;
+  }
+}
+/* VISTA DESKTOP PAG CONTACTO */
+@media (min-width: 1024px) {
+  section .section_informacion_contacto {
+    font-size: 2.8rem;
+  }
+  div .p_introduccion_formulario {
+    font-size: 2.8rem;
+  }
+  section .contenedor_formulario {
+    font-size: 1.8rem;
+  }
+  section .contenedor_formulario form div div .input_text {
+    font-size: large;
+  }
+}
 div {
   font-family: initial;
 }
@@ -554,9 +589,58 @@ div .button_formulario:hover::before {
 }
 
 @media (min-width: 768px) {
-  .button_formulario {
+  div .button_formulario {
     height: 2em;
     width: 7em;
+  }
+}
+/* MOVILE FIRST PAG UBICACION */
+.info_contacto .lista_info_contacto {
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 2rem;
+  padding: 1rem;
+  border-style: ridge;
+  line-height: 2;
+}
+
+.ubicacion_mapa {
+  display: flex;
+  justify-content: center;
+}
+.ubicacion_mapa iframe {
+  height: 25rem;
+  width: 25rem;
+}
+
+/* VISTA TABLET PAG UBICACION */
+@media (min-width: 768px) {
+  .info_contacto .lista_info_contacto {
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .ubicacion_mapa iframe {
+    height: 30rem;
+    width: 50rem;
+  }
+}
+/* VISTA DESKTOP PAG UBICACION */
+@media (min-width: 1024px) {
+  .info_contacto {
+    display: flex;
+    justify-content: center;
+  }
+  .info_contacto .lista_info_contacto {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    width: 90rem;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  }
+  .ubicacion_mapa iframe {
+    height: 40rem;
+    width: 80rem;
+    margin-bottom: 3rem;
   }
 }
 

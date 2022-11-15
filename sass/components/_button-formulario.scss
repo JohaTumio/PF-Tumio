@@ -39,7 +39,9 @@ div{
     }
 }
 @media (min-width:768px){
-    .button_formulario{
-        @include mixin.height-width (2em,7em);
+    div{
+        .button_formulario{
+            @include mixin.height-width (2em,7em);
+        }
     }
 }

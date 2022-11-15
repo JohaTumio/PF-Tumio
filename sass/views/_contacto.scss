@@ -26,6 +26,9 @@ section{
                     .input_consulta{
                         border-color: #D7DBDD;
                         color:#5D6D7E;
+                        option{
+                            font-family: map-get(mapas.$font-decoration, font-family);
+                        }
                     }
                 }
             }
@@ -34,7 +37,6 @@ section{
                     textarea{
                         resize: none;
                         height: 10em;
-                        width: 185px;
                     }
                 }
             }
@@ -42,6 +44,65 @@ section{
                 .input_text{
                     font-size:small;
                     font-family: map-get(mapas.$font-decoration, font-family);
+                }
+            }
+        }
+    }
+}
+/* VISTA TABLET PAG CONTACTO */
+@media (min-width:768px){
+    section{
+        .section_informacion_contacto{
+            font-size: 2rem;
+        }
+    }
+    div{
+        .p_introduccion_formulario{
+            font-size: 2.5rem;
+        }
+    }
+    section{
+        .contenedor_formulario{
+            font-size: 1.8rem;
+            form{
+                div{
+                    div{
+                        .input_consulta{
+                            height:3.4rem;
+                        }
+                    }
+                }
+                div{
+                    .input_text{
+                        font-size:medium;
+                    }
+                }
+            }
+        }
+    }
+}
+/* VISTA DESKTOP PAG CONTACTO */
+@media (min-width:1024px){
+    section{
+        .section_informacion_contacto{
+            font-size: 2.8rem;
+        }
+    }
+    div{
+        .p_introduccion_formulario{
+            font-size: 2.8rem;
+        }
+    }
+    section{
+        .contenedor_formulario{
+            font-size: 1.8rem;
+            form{
+                div{
+                    div{
+                        .input_text{
+                            font-size:large;
+                        }
+                    }
                 }
             }
         }

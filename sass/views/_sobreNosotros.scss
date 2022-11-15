@@ -8,7 +8,7 @@
 .section_sobre_nosotros{
     border-style: nth(listas.$bordes, 2);
     margin: 1rem;
-    background-image: variables.$fondo-ubicacion;
+    background-image: variables.$fondo-p-sobreNosotros;
     font-weight: bolder;
 }
 
