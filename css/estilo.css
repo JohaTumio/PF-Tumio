@@ -38,6 +38,9 @@ main #galeria div .img_galeria_productos div img, section .img_productos img, he
   color: #fff;
   border-radius: 5px;
 }
+.container_button_productos form .a_productos_enlace .pointer {
+  cursor: pointer;
+}
 
 @media (min-width: 1024px) {
   .container_button_productos form .a_productos_enlace {
