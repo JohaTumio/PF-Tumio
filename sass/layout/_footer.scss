@@ -39,6 +39,7 @@ footer{
         }
         .container_redes{
             .lista_redes{
+                flex-wrap:nowrap;
                 li{
                     a{
                         .red_social{

@@ -248,6 +248,9 @@ footer .container_redes .lista_redes li a .red_social {
   footer p {
     font-size: 2rem;
   }
+  footer .container_redes .lista_redes {
+    flex-wrap: nowrap;
+  }
   footer .container_redes .lista_redes li a .red_social {
     height: 3rem;
     width: 3rem;
