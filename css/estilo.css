@@ -461,6 +461,16 @@ main #galeria div .img_galeria_productos div img {
   width: 25rem;
   margin-bottom: 1.5rem;
 }
+main .icono_volver {
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 2rem;
+  background-color: #130d47;
+  padding: 1rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 0.5rem;
+}
 
 /* VISTA TABLET PAGINA PRODUCTOS */
 @media (min-width: 768px) {
@@ -472,11 +482,23 @@ main #galeria div .img_galeria_productos div img {
     width: 30rem;
     margin-bottom: 3rem;
   }
+  main .icono_volver {
+    font-size: 2rem;
+    border-radius: 3rem;
+    bottom: 5rem;
+    right: 1rem;
+  }
 }
 /* VISTA DESKTOP PAGINA PRODUCTOS */
 @media (min-width: 1024px) {
   main #galeria div .img_galeria_productos {
     margin-top: 5rem;
+  }
+  main .icono_volver {
+    font-size: 3rem;
+    border-radius: 3rem;
+    bottom: 5rem;
+    right: 4rem;
   }
 }
 /* MOVILE FIRST SOBRE NOSOTROS */
